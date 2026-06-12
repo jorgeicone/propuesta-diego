@@ -86,7 +86,7 @@ footer{position:relative;z-index:1;text-align:center;padding:36px 20px;border-to
 <p class="sub">Un plan de 3 meses para construir tu ecosistema de IA a la medida, crear artefactos que diferencien tu gestión comercial y llevar tu LinkedIn a nivel élite.</p>
 <p class="who">Diseñado para Diego Andrés Artunduaga · Gerente Comercial Colombia, Perú y Ecuador · Boston Medical Group</p>
 <div class="ctas">
-<a class="btn" href="mailto:jorgeicone.com@gmail.com?subject=Confirmo%20inicio%20del%20acompañamiento">Quiero empezar</a>
+<a class="btn" href="#inversion">Quiero empezar</a>
 <a class="btn-ghost" href="#plan">Ver el plan</a>
 </div>
 </section>
@@ -183,22 +183,31 @@ footer{position:relative;z-index:1;text-align:center;padding:36px 20px;border-to
 
 <section id="inversion">
 <h2 class="reveal" style="text-align:center">Inversión</h2>
-<div class="card price-card reveal">
-<p style="font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--cyan);font-weight:700">Acompañamiento completo · 3 meses</p>
-<div class="total grad" style="margin-top:10px">COP 3.600.000</div>
-<p class="per">COP 1.200.000 por mes · equivale a COP 150.000 por hora de mentoría</p>
-<ul class="inc">
-<li>12 sesiones uno a uno de 2 horas (una semanal, 100% virtual)</li>
-<li>Soporte por WhatsApp entre sesiones</li>
-<li>Retos prácticos semanales aplicados a tu operación</li>
-<li>Reingeniería completa de tu LinkedIn (meta 90+)</li>
-<li>Mínimo 3 artefactos de IA construidos contigo y para tu cargo</li>
-<li>Materiales, plantillas y prompts maestros de cada sesión</li>
-<li>Re-test de diagnósticos y hoja de ruta de 90 días al cierre</li>
-</ul>
-<a class="btn" href="mailto:jorgeicone.com@gmail.com?subject=Confirmo%20inicio%20del%20acompañamiento">Confirmar mi inicio</a>
-<p style="font-size:0.78rem;margin-top:16px">Pago mensual anticipado. Cupo de inicio sujeto a agenda. Propuesta vigente por 15 días.</p>
+<p class="reveal" style="text-align:center;max-width:640px;margin:0 auto">El programa completo incluye 12 sesiones uno a uno de 2 horas, soporte por WhatsApp entre sesiones, retos semanales, reingeniería completa de LinkedIn, mínimo 3 artefactos de IA, materiales y prompts maestros, y re-test de diagnósticos al cierre.</p>
+<div class="grid3" style="margin-top:30px">
+<div class="card reveal" style="text-align:center;padding:32px 24px">
+<p style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--cyan);font-weight:700">Mes a mes</p>
+<div style="font-size:2rem;font-weight:800;margin:12px 0 2px">$1.200.000</div>
+<p style="font-size:0.85rem">por mes anticipado</p>
+<p style="font-size:0.82rem;margin:14px 0 22px;min-height:40px">Flexibilidad total: pagas cada mes al iniciar.</p>
+<a class="btn" style="padding:13px 28px;font-size:0.92rem" href="https://checkout.wompi.co/l/xgX0bL">Pagar mes 1</a>
 </div>
+<div class="card reveal" style="text-align:center;padding:32px 24px">
+<p style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:#a974ff;font-weight:700">2 meses anticipados</p>
+<div style="font-size:2rem;font-weight:800;margin:12px 0 2px">$2.300.000</div>
+<p style="font-size:0.85rem">ahorras $100.000 (4%)</p>
+<p style="font-size:0.82rem;margin:14px 0 22px;min-height:40px">Aseguras los 2 primeros meses con descuento.</p>
+<a class="btn" style="padding:13px 28px;font-size:0.92rem" href="https://checkout.wompi.co/l/L7HO0P">Pagar 2 meses</a>
+</div>
+<div class="card reveal" style="text-align:center;padding:32px 24px;border:1px solid rgba(255,140,0,0.45);box-shadow:0 0 48px rgba(255,140,0,0.12)">
+<p style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);font-weight:700">Programa completo · Mejor opción</p>
+<div class="grad" style="font-size:2rem;font-weight:800;margin:12px 0 2px">$3.300.000</div>
+<p style="font-size:0.85rem">ahorras $300.000 (8%)</p>
+<p style="font-size:0.82rem;margin:14px 0 22px;min-height:40px">Los 3 meses completos con el mayor descuento.</p>
+<a class="btn" style="padding:13px 28px;font-size:0.92rem" href="https://checkout.wompi.co/l/OtnYud">Pagar programa</a>
+</div>
+</div>
+<p class="reveal" style="text-align:center;font-size:0.78rem;margin-top:18px">Pago seguro vía Wompi (Bancolombia): tarjetas, PSE, Nequi y más. Cupo de inicio sujeto a agenda. Propuesta vigente por 15 días.</p>
 </section>
 
 <section id="mentor" style="padding-bottom:90px">
@@ -220,28 +229,4 @@ var c=document.getElementById('particles'),x=c.getContext('2d'),P=[],N=90,W,H;
 var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function rs(){W=c.width=innerWidth;H=c.height=innerHeight}
 rs();addEventListener('resize',rs);
-for(var i=0;i<N;i++)P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4});
-function step(){
-x.clearRect(0,0,W,H);
-for(var i=0;i<N;i++){var p=P[i];p.x+=p.vx;p.y+=p.vy;
-if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
-x.beginPath();x.arc(p.x,p.y,1.4,0,6.283);x.fillStyle='rgba(0,212,255,0.55)';x.fill();
-for(var j=i+1;j<N;j++){var q=P[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;
-if(d<13000){x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.strokeStyle='rgba(123,47,255,'+(0.16*(1-d/13000))+')';x.lineWidth=0.6;x.stroke()}}}
-if(!rm)requestAnimationFrame(step)}
-step();
-var io=new IntersectionObserver(function(es){es.forEach(function(e){
-if(!e.isIntersecting)return;
-e.target.classList.add('in');
-e.target.querySelectorAll('.bar i').forEach(function(b){b.style.width=b.dataset.w+'%'});
-e.target.querySelectorAll('[data-count]').forEach(function(el){
-if(el.dataset.done)return;el.dataset.done=1;
-var t=+el.dataset.count,s=0,dur=rm?1:1100,st=performance.now();
-function tick(now){var k=Math.min((now-st)/dur,1);k=1-Math.pow(1-k,3);el.textContent=Math.round(t*k);if(k<1)requestAnimationFrame(tick)}
-requestAnimationFrame(tick)});
-io.unobserve(e.target)})},{threshold:0.18});
-document.querySelectorAll('.reveal,.kpi').forEach(function(el){io.observe(el)});
-})();
-</script>
-</body>
-</html>
+for(var i=0;i<N;i++)P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx
