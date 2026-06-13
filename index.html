@@ -317,9 +317,9 @@ var P=[],N=64,W,H,t=0;
 function rs(){W=c.width=innerWidth;H=c.height=innerHeight;}
 rs();
 addEventListener('resize',rs);
-for(var i=0;i<N;i++){P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.055,vy:(Math.random()-.5)*.055,r:1+Math.random()*1.2,ph:Math.random()*6.28});}
+for(var i=0;i<N;i++){P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:1+Math.random()*1.2,ph:Math.random()*6.28});}
 function step(){
-t+=0.006;
+t+=0.009;
 x.clearRect(0,0,W,H);
 for(var i=0;i<N;i++){
 var p=P[i];p.x+=p.vx;p.y+=p.vy;
@@ -352,3 +352,4 @@ step();
 </script>
 </body>
 </html>
+  
