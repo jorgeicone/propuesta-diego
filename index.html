@@ -49,6 +49,9 @@ p{color:var(--muted)}
 .menu{margin-top:30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 .menu a{font-size:0.82rem;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--card-border);border-radius:50px;padding:9px 18px;transition:color .18s,background .18s,border-color .18s}
 .menu a:hover{color:var(--cyan);background:rgba(0,212,255,0.08);border-color:rgba(0,212,255,0.45)}
+.backwrap{text-align:center;margin-top:30px}
+.back{display:inline-block;font-size:0.8rem;font-weight:600;color:var(--cyan);text-decoration:none;border:1px solid var(--card-border);border-radius:50px;padding:8px 20px;background:rgba(0,212,255,0.05);transition:background .18s}
+.back:hover{background:rgba(0,212,255,0.14)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
@@ -106,7 +109,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <img class="avatar" src="diego.jpg" alt="Diego Andrés Artunduaga">
 <div class="avatar-meta"><b>Diseñado para Diego Andrés Artunduaga</b><span>Gerente Comercial Colombia, Perú y Ecuador · Boston Medical Group</span></div>
 </div>
-<nav class="menu" aria-label="Secciones de la propuesta">
+<nav class="menu" id="menu" aria-label="Secciones de la propuesta">
 <a href="#punto-partida">Diagnóstico</a>
 <a href="#ecosistema">Ecosistema</a>
 <a href="#objetivos">Objetivos</a>
@@ -151,6 +154,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <p style="font-size:0.84rem;margin-top:14px">Tu trayectoria en Nestlé, Nutresa, Noel, Nokia y Lafayette es prueba social potente que hoy está enterrada. Meta del acompañamiento: <b style="color:var(--cyan)">90+ puntos</b>.</p>
 </div>
 </div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="ecosistema">
@@ -168,6 +172,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="tool reveal"><div class="ic">CV</div><div><b>Canva AI</b><span>Diseño rápido y consistente: piezas, banners y material comercial.</span></div></div>
 <div class="tool reveal"><div class="ic">V3</div><div><b>Veo 3</b><span>Video generado con IA para contenido que destaca en el feed.</span></div></div>
 </div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="objetivos">
@@ -181,6 +186,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="card obj reveal"><div class="n">D</div><div><h3>LinkedIn a punto: mínimo 90/100</h3><p style="font-size:0.92rem">Reingeniería completa ejecutada en trabajo off entre sesiones: titular, extracto, banner, logros, recomendaciones y estrategia de contenido. De 40 a nivel élite.</p></div></div>
 <div class="card obj reveal"><div class="n">E</div><div><h3>Habilidades para volar solo</h3><p style="font-size:0.92rem">Desarrollas las skills clave para seguir operando tu ecosistema, crear nuevos artefactos y destacarte en tu cargo sin depender de nadie.</p></div></div>
 </div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="plan">
@@ -220,6 +226,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="reveal" style="text-align:center;margin-top:34px">
 <a class="btn" href="#inversion">Quiero empezar</a>
 </div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="dedicacion">
@@ -232,6 +239,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="card kpi reveal"><div class="v">12 h</div><div class="l">En off: soporte por WhatsApp y revisión de retos, 1 hora semanal en promedio</div></div>
 </div>
 <p class="reveal" style="margin-top:18px;font-size:0.95rem;text-align:center"><b style="color:var(--cyan)">46 horas de dedicación total</b>: 24 contigo en sesión y 22 de trabajo en off a tu favor.</p>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="resultados">
@@ -244,6 +252,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="card kpi reveal"><div class="v">9</div><div class="l">IAs dominadas y orquestadas en tu ecosistema</div></div>
 </div>
 <p class="reveal" style="margin-top:18px;font-size:0.9rem">Además: ecosistema funcionando como sistema integrado, plan de contenido en marcha y autonomía completa para sostenerlo.</p>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="inversion">
@@ -281,6 +290,7 @@ footer a{color:var(--cyan);text-decoration:none}
 </div>
 </div>
 <p class="reveal" style="text-align:center;font-size:0.78rem;margin-top:18px">Pago seguro vía Wompi (Bancolombia): tarjetas, PSE, Nequi y más. Cupo de inicio sujeto a agenda. Propuesta vigente por 15 días.</p>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 <section id="mentor" style="padding-bottom:90px">
@@ -293,6 +303,7 @@ footer a{color:var(--cyan);text-decoration:none}
 <a class="btn-ghost" style="padding:11px 24px;font-size:0.9rem" href="https://www.linkedin.com/in/jorgehugoperezgaona/">LinkedIn de Jorge Hugo</a>
 </div>
 </div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
 </section>
 
 </main>
@@ -315,41 +326,3 @@ var c=document.getElementById('particles');
 var x=c.getContext('2d');
 var P=[],N=64,W,H,t=0;
 function rs(){W=c.width=innerWidth;H=c.height=innerHeight;}
-rs();
-addEventListener('resize',rs);
-for(var i=0;i<N;i++){P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:1+Math.random()*1.2,ph:Math.random()*6.28});}
-function step(){
-t+=0.009;
-x.clearRect(0,0,W,H);
-for(var i=0;i<N;i++){
-var p=P[i];p.x+=p.vx;p.y+=p.vy;
-if(p.x<-20)p.x=W+20;if(p.x>W+20)p.x=-20;
-if(p.y<-20)p.y=H+20;if(p.y>H+20)p.y=-20;
-}
-for(var i=0;i<N;i++){
-var p=P[i];
-for(var j=i+1;j<N;j++){
-var q=P[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;
-if(d<22000){
-var a=0.06*(1-d/22000);
-x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);
-x.strokeStyle=(i+j)%2?'rgba(0,212,255,'+a+')':'rgba(123,47,255,'+(a*1.3)+')';
-x.lineWidth=0.7;x.stroke();
-}
-}
-}
-for(var i=0;i<N;i++){
-var p=P[i];
-var pulse=0.3+0.18*Math.sin(t*1.2+p.ph);
-x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);
-x.fillStyle='rgba(0,212,255,'+pulse+')';x.fill();
-}
-if(!rm){requestAnimationFrame(step);}
-}
-step();
-}catch(err){}
-})();
-</script>
-</body>
-</html>
-  
