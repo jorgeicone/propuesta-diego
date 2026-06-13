@@ -310,5 +310,55 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="tool"><div class="ic">EF</div><div><b>Efectivo</b><span>En más de 25.000 corresponsales bancarios Bancolombia.</span></div></div>
 <div class="tool"><div class="ic">4x</div><div><b>Compra y Paga Después</b><span>Hasta 4 cuotas mensuales sin intereses con Bancolombia (cupo al instante).</span></div></div>
 <div class="tool"><div class="ic">✓</div><div><b>Comprobante</b><span>Recibes confirmación automática del pago al correo.</span></div></div>
+<p style="font-size:0.78rem;margin-top:16px;color:var(--muted)">Cupo de inicio sujeto a agenda · Propuesta vigente por 15 días.</p>
 </div>
-<p style="font-size:0.78rem;margin-top:16px;color:var(--muted)">Cupo de inicio sujeto a agenda · P
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
+</section>
+
+<section id="mentor" style="padding-bottom:90px">
+<div class="card glow reveal">
+<span class="eyebrow">Tu mentor</span>
+<h3 style="margin-bottom:8px;font-size:1.3rem">Jorge Hugo Pérez Gaona</h3>
+<p style="font-size:0.95rem;max-width:760px">Fundador de ICONE ialabs e ICONE Academy, creador del ICONE Method. Estratega en inteligencia artificial aplicada a negocios, formador de directivos y equipos comerciales en Colombia y LATAM. Este acompañamiento aplica el mismo método con el que empresas y ejecutivos están integrando la IA a su operación real, no a la teoría.</p>
+<div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn-ghost" style="padding:11px 24px;font-size:0.9rem" href="https://iconeialabs.com">iconeialabs.com</a>
+<a class="btn-ghost" style="padding:11px 24px;font-size:0.9rem" href="https://www.linkedin.com/in/jorgehugoperezgaona/">LinkedIn de Jorge Hugo</a>
+</div>
+</div>
+<div class="backwrap"><a class="back" href="#menu">↑ Volver al menú</a></div>
+</section>
+
+</main>
+<footer><a href="https://iconeialabs.com">ICONE ialabs</a> · Bogotá, Colombia · <a href="https://www.linkedin.com/in/jorgehugoperezgaona/">LinkedIn</a> · jorgeicone.com@gmail.com<br>Propuesta confidencial preparada para Diego Andrés Artunduaga · Junio 2026</footer>
+
+<script>
+(function(){
+try{
+document.documentElement.classList.add('js');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+}catch(err){document.documentElement.classList.remove('js');}
+try{
+var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var c=document.getElementById('particles');
+c.style.opacity='0.85';
+var x=c.getContext('2d');
+var P=[],N=90,W,H,t=0;
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;}
+rs();
+addEventListener('resize',rs);
+for(var i=0;i<N;i++){P.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:1.2+Math.random()*1.6,ph:Math.random()*6.28});}
+function step(){
+t+=0.009;
+x.clearRect(0,0,W,H);
+for(var i=0;i<N;i++){var p=P[i];p.x+=p.vx;p.y+=p.vy;if(p.x<-20)p.x=W+20;if(p.x>W+20)p.x=-20;if(p.y<-20)p.y=H+20;if(p.y>H+20)p.y=-20;}
+for(var i=0;i<N;i++){var p=P[i];for(var j=i+1;j<N;j++){var q=P[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;if(d<28000){var a=0.18*(1-d/28000);x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.strokeStyle=(i+j)%2?'rgba(0,212,255,'+a+')':'rgba(123,47,255,'+(a*1.25)+')';x.lineWidth=1;x.stroke();}}}
+for(var i=0;i<N;i++){var p=P[i];var pulse=0.55+0.25*Math.sin(t*1.2+p.ph);x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fillStyle='rgba(0,212,255,'+pulse+')';x.fill();}
+if(!rm){requestAnimationFrame(step);}
+}
+step();
+}catch(err){}
+})();
+</script>
+</body>
+</html>
